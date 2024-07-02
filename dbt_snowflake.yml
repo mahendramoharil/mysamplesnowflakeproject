@@ -6,7 +6,7 @@ my_snowflake_profile:
       account: MC49426
       user: mahendra
       password: Admin123
-      role: transformer
+      role: 
       database: HEVOSAMPLEDB
       warehouse: COMPUTE_WH
       schema: public
