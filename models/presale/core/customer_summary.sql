@@ -27,6 +27,6 @@ select
   orders.most_recent_order,
   orders.number_of_orders,
   payments.customer_lifetime_value
-from customers
+from HEVOSAMPLEDB.public.customers
 left join orders on customers.id = orders.user_id
 left join payments on customers.id = payments.user_id
