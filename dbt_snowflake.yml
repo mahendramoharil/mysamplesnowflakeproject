@@ -3,7 +3,7 @@ my_snowflake_profile:
   outputs:
     dev:
       type: snowflake
-      account: MC49426
+      account: afmiesl-mc49426
       user: mahendra
       password: Admin123
       role: 
