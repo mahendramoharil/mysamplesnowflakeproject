@@ -34,7 +34,7 @@ models:
   mysamplesnowflakeproject:
     presale:
       core:
-        customer:
+        customer_summary:
           materialized: table
     # Applies to all files under models/example/
     example:
