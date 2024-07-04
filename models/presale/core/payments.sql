@@ -2,8 +2,8 @@ with customer_payments as (
   select
     o.user_id,
     sum(p.payment_amount) as customer_lifetime_value
-  from HEVOSAMPLEDB.public.pgsql_raw_payments p
-  join HEVOSAMPLEDB.public.pgsql_raw_orders o
+  from HAVOSAMPLEDB.public.pgsql_raw_payments p
+  join HAVOSAMPLEDB.public.pgsql_raw_orders o
     on p.order_id = o.id
   group by o.user_id
 )
