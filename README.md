@@ -13,18 +13,20 @@ Prerequisites:-
 
 Project Structure
 ===========================
+Project Structure
+===========================
 my_snowflake_project/
-├── models/
-│ ├── presale/
-│ │ ├── core/
-│ │ │ ├── customer_summary.sql
-│ │ │ ├── customers.sql
-│ │ │ ├── orders.sql
-│ │ │ ├── payments.sql
-│ │ │ ├── schema.yml
-├── macros/
-├── dbt_project.yml
-└── README.md
+	models/
+		presale/
+			core/
+				-customer_summary.sql
+				─customers.sql
+				─orders.sql
+				─payments.sql
+	schema.yml
+	macros/
+	dbt_project.yml
+	README.md
 
 Setup Instructions:-
 =========================
