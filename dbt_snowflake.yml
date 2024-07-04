@@ -7,7 +7,7 @@ my_snowflake_profile:
       user: mahendra
       password: Admin123
       role: transformer
-      database: HEVOSAMPLEDB
+      database: HAVOSAMPLEDB
       warehouse: COMPUTE_WH
       schema: public
       threads: 1
