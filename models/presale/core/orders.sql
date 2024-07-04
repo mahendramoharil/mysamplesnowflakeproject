@@ -1,3 +1,4 @@
+-- models/marts/core/orders.sql
 with customer_orders as (
   select
     user_id,
