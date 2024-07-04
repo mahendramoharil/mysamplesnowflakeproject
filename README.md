@@ -34,6 +34,7 @@ git clone https://github.com/mahendramoharil/mysamplesnowflakeproject
 cd mysamplesnowflakeproject
 
 2.Install dbt cloud :
+
 3.Configure your profiles.yml:
 
 my_snowflake_profile:
