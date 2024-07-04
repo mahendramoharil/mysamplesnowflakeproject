@@ -22,7 +22,7 @@ my_snowflake_project/
 │ │ │ ├── orders.sql
 │ │ │ ├── payments.sql
 │ │ │ ├── schema.yml
-├── macros
+├── macros/
 ├── dbt_project.yml
 └── README.md
 
