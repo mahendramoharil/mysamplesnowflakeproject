@@ -4,7 +4,7 @@ with customer_orders as (
     min(order_date) as first_order,
     max(order_date) as most_recent_order,
     count(id) as number_of_orders
-  from HEVOSAMPLEDB.public.pgsql_raw_orders
+  from HAVOSAMPLEDB.public.pgsql_raw_orders
   group by user_id
 )
 select

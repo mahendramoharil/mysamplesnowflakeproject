@@ -1,3 +1,4 @@
+-- models/marts/core/customer_summary.sql
 with customers as (
   select
     id,
@@ -27,6 +28,6 @@ select
   orders.most_recent_order,
   orders.number_of_orders,
   payments.customer_lifetime_value
-from HEVOSAMPLEDB.public.customers
+from customers
 left join orders on customers.id = orders.user_id
 left join payments on customers.id = payments.user_id
