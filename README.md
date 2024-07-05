@@ -1,15 +1,69 @@
 This project creates a materialized view customer_summary in Snowflake, aggregating data from three tables: pgsql_raw_customers, pgsql_raw_orders, and pgsql_raw_payments
 
 Prerequisites:-
-
+====================
 1. Github Access
 2. Sign up for a free trail of Snowflake
 3. Sign up for a free account in Hevo
 4. Install/Configure PostgreSQL DB Instance
 5. Network Configuration
+6. dbt cloud installed
+7. Access to a Snowflake database
+8. Configured profiles.yml file for Snowflake
 
+Project Structure
+===========================
+Project Structure
+===========================
+my_snowflake_project/
+├── models/
+│ ├── presale/
+│ │ ├── core/
+│ │ │ ├── customer_summary.sql
+│ │ │ ├── customers.sql
+│ │ │ ├── orders.sql
+│ │ │ ├── payments.sql
+│ │ │ ├── schema.yml
+├── macros/
+├── dbt_project.yml
+└── README.md
 
-Detail summary of this Assessment - 
+Setup Instructions:-
+=========================
+1. Clone the repository:
+
+git clone https://github.com/mahendramoharil/mysamplesnowflakeproject
+cd mysamplesnowflakeproject
+
+2.Install dbt cloud :
+
+3.Configure your profiles.yml:
+
+my_snowflake_profile:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: <acname>
+      user: <yourusername>
+      password: <yourpwd>
+      role: 
+      database: HAVOSAMPLEDB
+      warehouse: COMPUTE_WH
+      schema: public
+      threads: 1
+      client_session_keep_alive: False 
+
+Build and Run Instructions
+==================
+1.Installed required libraries 
+2.dbt deps
+3.dbt clean
+4.dbt run
+5.dbt test
+
+Detail summary of this GCP Assessment - 
+=========================
 
 1. Created PGSQL DB instance on GCP Cloud sql .
 2. ![image](https://github.com/mahendramoharil/mysamplesnowflakeproject/assets/84889579/94dcbd39-44bf-4f4e-80c4-d265a9d7fa79)
