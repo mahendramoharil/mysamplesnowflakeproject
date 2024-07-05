@@ -1,3 +1,0 @@
-Hevodata Project :-Customer Summary in Snowflake DB
-
-This  project creates a table in Snowflake, aggregating data from three tables: pgsql_raw_customers, pgsql_raw_orders, and pgsql_raw_payments.
