@@ -1,4 +1,3 @@
--- models/marts/core/customer_summary.sql
 with customers as (
   select
     id,
